@@ -7,6 +7,8 @@ import { Oscar } from "./components/Oscar";
 import { Person } from "./components/Person";
 import { PersonList } from "./components/PersonList";
 import { Status } from "./components/Status";
+import { Box } from "./components/context/Box";
+import { ThemeContextProvider } from "./components/context/ThemeContext";
 import { User } from "./components/state/User";
 
 function App() {
@@ -48,6 +50,10 @@ function App() {
       />
       <Input value="" handleChange={(event) => console.log(event)} />
       <User />
+
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
 
     </div>
   ); 
