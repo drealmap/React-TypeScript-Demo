@@ -30,7 +30,7 @@ function App() {
     },
     {
       first: "Princess",
-      last: "Diana",
+      last: "Dianas",
     },
   ];
 
@@ -40,6 +40,7 @@ function App() {
       <Person name={personName} />
       <PersonList names={nameList} />
       <Status status="loading" />
+
 
       <Oscar>
         <Heading>Placeholder</Heading>
