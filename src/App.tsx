@@ -14,6 +14,8 @@ import { UserContextProvider } from "./components/context/UserContext";
 import { User } from "./components/context/User";
 import { List } from "./components/generics/List";
 import { RandomNumbers } from "./components/restriction/RandomNumbers";
+import { CustomButton } from "./components/html/Button";
+import { Input2 } from "./components/html/Input";
 
 function App() {
   const personName = {
@@ -72,6 +74,9 @@ function App() {
         onClick={(item) => console.log(item)}
       />
       <RandomNumbers value={10} isPositive />
+
+      <CustomButton variant="primary" onClick={() => console.log('clicked')}>Primary Button</CustomButton>
+      <Input2 placeholder="" />
     </div>
   );
 }
