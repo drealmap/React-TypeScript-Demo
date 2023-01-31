@@ -13,6 +13,7 @@ import { UserContextProvider } from "./components/context/UserContext";
 // import { User } from "./components/state/User";
 import { User } from "./components/context/User";
 import { List } from "./components/generics/List";
+import { RandomNumbers } from "./components/restriction/RandomNumbers";
 
 function App() {
   const personName = {
@@ -70,6 +71,7 @@ function App() {
         items={[1, 2, 3, 'false']}
         onClick={(item) => console.log(item)}
       />
+      <RandomNumbers value={10} isPositive />
     </div>
   );
 }
