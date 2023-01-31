@@ -12,6 +12,7 @@ import { ThemeContextProvider } from "./components/context/ThemeContext";
 import { UserContextProvider } from "./components/context/UserContext";
 // import { User } from "./components/state/User";
 import { User } from "./components/context/User";
+import { List } from "./components/generics/List";
 
 function App() {
   const personName = {
@@ -41,7 +42,6 @@ function App() {
       <PersonList names={nameList} />
       <Status status="loading" />
 
-
       <Oscar>
         <Heading>Placeholder</Heading>
       </Oscar>
@@ -62,8 +62,16 @@ function App() {
         <User />
       </UserContextProvider>
 
+      <List
+        items={["Batman", "Superwoman", "Wonderwoman"]}
+        onClick={(item) => console.log(item)}
+      />
+      <List
+        items={[1, 2, 3, 'false']}
+        onClick={(item) => console.log(item)}
+      />
     </div>
-  ); 
+  );
 }
 
 export default App;
